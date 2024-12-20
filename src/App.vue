@@ -1,14 +1,13 @@
-<script setup>
-import HomePage from './components/HomePage.vue'
-import Autenticação from './components/Autenticação.vue'
-import Inscricoes from './components/Inscricoes.vue'
-import Programa from './components/Programa.vue'
+<script>
+export default {
+  name: "App",
+};
 </script>
 
 <template>
   <nav>
     <router-link to="/">Home</router-link>
-    <router-link to="/auth">Login/Registro</router-link>
+    <router-link to="/autenticacao">Login/Registro</router-link>
     <router-link to="/programa">Programa</router-link>
     <router-link to="/inscricoes">Inscrições</router-link>
   </nav>
