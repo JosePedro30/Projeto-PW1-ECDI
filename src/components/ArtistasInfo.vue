@@ -51,7 +51,7 @@
               params: {
                 method: "artist.getinfo",
                 artist: this.artistName,
-                api_key: "67898544dd61d6d7aa522ec70a263a9e",
+                api_key: "04351e62a39d8da3d239511f600fdfd8",
                 format: "json",
               },
             }
