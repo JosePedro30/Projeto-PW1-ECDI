@@ -1,44 +1,16 @@
-<script>
-export default {
-  name: "App",
-};
-</script>
-
 <template>
-  <nav>
-    <router-link to="/">Home</router-link>
-    <router-link to="/autenticacao">Login/Registro</router-link>
-    <router-link to="/programa">Programa</router-link>
-    <router-link to="/inscricoes">Inscrições</router-link>
-  </nav>
-  <router-view></router-view>
+  <div id="app">
+    <NavBar />
+    <router-view /> <!-- Renderiza a página com base na rota -->
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script>
+import NavBar from './components/NavBar.vue';
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+export default {
+  components: {
+    NavBar,
+  },
+};
+</script>
