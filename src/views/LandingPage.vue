@@ -1,206 +1,663 @@
 <template>
-    <div class="flex overflow-hidden flex-col bg-white">
-      <header class="flex z-10 gap-5 justify-between items-center px-9 py-6 w-full bg-slate-500 max-md:px-5 max-md:max-w-full">
-        <div class="flex flex-col justify-center self-stretch p-2.5">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/700a0dbe14fdf03587da6d363014556623a5a9c4559d50208b2af8dbbc2d2c08?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="Festival Logo" class="object-contain aspect-[4.37] w-[253px]" />
-        </div>
-        <nav class="flex flex-wrap gap-10 self-stretch my-auto text-4xl font-bold text-center text-white max-md:max-w-full" role="navigation">
-          <a href="#cartaz" class="gap-2.5 self-stretch p-2.5 whitespace-nowrap hover:text-green-400 focus:outline-none focus:ring-2 focus:ring-green-400" tabindex="0">Cartaz</a>
-          <a href="#bilhetes" class="gap-2.5 self-stretch p-2.5 whitespace-nowrap hover:text-green-400 focus:outline-none focus:ring-2 focus:ring-green-400" tabindex="0">Bilhetes</a>
-          <a href="#atividades" class="gap-2.5 self-stretch p-2.5 whitespace-nowrap hover:text-green-400 focus:outline-none focus:ring-2 focus:ring-green-400" tabindex="0">Atividades</a>
-          <a href="#merchandising" class="gap-2.5 self-stretch p-2.5 whitespace-nowrap hover:text-green-400 focus:outline-none focus:ring-2 focus:ring-green-400" tabindex="0">Merchandising</a>
-          <a href="#info" class="gap-2.5 self-stretch p-2.5 hover:text-green-400 focus:outline-none focus:ring-2 focus:ring-green-400" tabindex="0">Info Útil</a>
-          <a href="#causa-verde" class="gap-2.5 self-stretch p-2.5 hover:text-green-400 focus:outline-none focus:ring-2 focus:ring-green-400" tabindex="0">Causa Verde</a>
-        </nav>
-        <div class="flex gap-5 self-stretch my-auto">
-          <button class="flex gap-2.5 items-center p-2.5 focus:outline-none focus:ring-2 focus:ring-green-400" aria-label="Search">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b938be08d6a2c8966ad0eb6b50a8d2adef44ed958cf104d1e40df1fa552c4ef6?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="" class="object-contain self-stretch my-auto aspect-square w-[38px]" />
-          </button>
-          <button class="flex gap-2.5 items-center p-2.5 focus:outline-none focus:ring-2 focus:ring-green-400" aria-label="User account">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/713fd5f8d7c6fb79ea8b0da616ab879d0c699836c2f027d659bf262ba56c32b7?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="" class="object-contain self-stretch my-auto aspect-square w-[38px]" />
-          </button>
-        </div>
-      </header>
-  
-      <main>
-        <section class="flex flex-col pt-3.5 pb-9 -mt-11 w-full text-xl text-center text-white bg-black max-md:max-w-full" aria-label="Hero section">
-          <div class="flex relative flex-col items-center px-16 pb-32 w-full min-h-[1021px] pt-[893px] max-md:px-5 max-md:py-24 max-md:max-w-full">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/902f90548bb2a757d8f94a1017c7375a0081ea002660f284e418db67c1b79744?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="Festival main stage" class="object-cover absolute inset-0 size-full" />
-            <button class="relative gap-2.5 self-stretch px-5 py-4 mb-0 max-w-full bg-green-400 bg-opacity-60 min-h-[54px] w-[283px] max-md:mb-2.5 hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-green-400" aria-label="Buy tickets">
-              Compre o Seu Bilhete
-            </button>
-          </div>
-        </section>
-  
-        <section class="px-16 pt-1 pb-14 w-full font-bold text-center text-white whitespace-nowrap bg-slate-500 text-[160px] max-md:px-5 max-md:max-w-full max-md:text-4xl" aria-label="Countdown timer">
-          00:00:00
-        </section>
-  
-        <section class="flex flex-col items-center px-20 pt-24 pb-44 w-full bg-orange-50 max-md:px-5 max-md:pb-24 max-md:max-w-full" aria-label="Line-up section">
-          <div class="flex flex-col items-center mb-0 w-full max-w-[1416px] max-md:mb-2.5 max-md:max-w-full">
-            <h2 class="text-6xl font-bold text-center text-black max-md:text-4xl">Line-up</h2>
-            <div class="self-stretch mt-20 max-md:mt-10 max-md:max-w-full">
-              <div class="flex gap-5 max-md:flex-col">
-                <article class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-                  <div class="flex flex-col grow text-black max-md:mt-10">
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a9f796517669bdb9ba6d81e44dbbe55e6646727956994690c49f73400c56008e?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="Xutos & Pontapés performing live" class="object-contain w-full aspect-[1.1]" />
-                    <div class="flex flex-col self-start mt-9 ml-4 max-md:ml-2.5">
-                      <h3 class="text-4xl font-bold">Xutos & Pontapés</h3>
-                      <time datetime="2025-01-19" class="self-start mt-6 text-xl">19 de Janeiro</time>
-                    </div>
-                  </div>
-                </article>
-  
-                <article class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-                  <div class="flex flex-col grow text-black max-md:mt-10">
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2fd2a92986bb0929d47f4d00b98aa22abff0c4b2aa3e3de51844eee50c3595b3?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="The Weeknd performing live" class="object-contain w-full aspect-[1.1]" />
-                    <div class="flex flex-col self-start mt-9 ml-4 max-md:ml-2.5">
-                      <h3 class="text-4xl font-bold">The Weeknd</h3>
-                      <time datetime="2025-01-18" class="self-start mt-8 text-xl">18 de Janeiro</time>
-                    </div>
-                  </div>
-                </article>
-  
-                <article class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-                  <div class="flex flex-col grow text-black max-md:mt-10">
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e62ecc3b7ed53f645ff37a19471ce48881c17c6072745bee3b73cdc36c44e8f?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="Anselmo Ralph performing live" class="object-contain w-full aspect-[1.1]" />
-                    <div class="flex flex-col self-start mt-9 ml-4 max-md:ml-2.5">
-                      <h3 class="text-4xl font-bold">Anselmo Ralph</h3>
-                      <time datetime="2025-01-17" class="self-start mt-6 text-xl">17 de Janeiro</time>
-                    </div>
-                  </div>
-                </article>
-              </div>
+  <main class="homepage">
+    <header class="nav-header">
+      <div class="logo">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/700a0dbe14fdf03587da6d363014556623a5a9c4559d50208b2af8dbbc2d2c08?apiKey=7cf9ab7765004c278c4384db27161637&"
+          alt="Festival Logo"
+          class="logo-image"
+        />
+      </div>
+      <nav class="nav-links">
+        <a href="#cartaz" class="nav-link">Cartaz</a>
+        <a href="#bilhetes" class="nav-link">Bilhetes</a>
+        <a href="#atividades" class="nav-link">Atividades</a>
+        <a href="#merchandising" class="nav-link">Merchandising</a>
+        <a href="#info" class="nav-link">Info Útil</a>
+        <a href="#causa-verde" class="nav-link">Causa Verde</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-button" aria-label="Shopping Cart">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/b938be08d6a2c8966ad0eb6b50a8d2adef44ed958cf104d1e40df1fa552c4ef6?apiKey=7cf9ab7765004c278c4384db27161637&"
+            alt=""
+            class="cart-icon"
+          />
+        </button>
+        <button class="profile-button" aria-label="User Profile">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/713fd5f8d7c6fb79ea8b0da616ab879d0c699836c2f027d659bf262ba56c32b7?apiKey=7cf9ab7765004c278c4384db27161637&"
+            alt=""
+            class="profile-icon"
+          />
+        </button>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-content">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/902f90548bb2a757d8f94a1017c7375a0081ea002660f284e418db67c1b79744?apiKey=7cf9ab7765004c278c4384db27161637&"
+          alt="Festival Hero Image"
+          class="hero-image"
+        />
+        <button class="cta-button">Compre o Seu Bilhete</button>
+      </div>
+    </section>
+
+    <div class="countdown">00:00:00</div>
+
+    <section class="lineup-section">
+      <div class="lineup-container">
+        <h2 class="section-title">Line-up</h2>
+        <div class="artist-grid">
+          <article class="artist-card">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/a9f796517669bdb9ba6d81e44dbbe55e6646727956994690c49f73400c56008e?apiKey=7cf9ab7765004c278c4384db27161637&"
+              alt="Xutos & Pontapés"
+              class="artist-image"
+            />
+            <div class="artist-info">
+              <h3 class="artist-name">Xutos & Pontapés</h3>
+              <time class="artist-date">19 de Janeiro</time>
             </div>
-            <button class="gap-2.5 self-stretch px-20 py-3.5 mt-36 ml-4 max-w-full text-xl text-center text-white bg-green-400 min-h-[50px] w-[262px] max-md:px-5 max-md:mt-10 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-400">
-              Ver Mais
-            </button>
-          </div>
-        </section>
-  
-        <section class="flex flex-col w-full font-bold text-white bg-black max-md:max-w-full" aria-label="Green initiative section">
-          <div class="flex relative flex-col justify-center items-center px-20 py-28 w-full min-h-[1080px] max-md:px-5 max-md:py-24 max-md:max-w-full">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/77d5fe4b3ac7eccb5b080360ceb2d36e90fdef8d0047a4af8979ad1996638b34?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="Nature background representing sustainability" class="object-cover absolute inset-0 size-full" />
-            <div class="flex relative flex-col items-center mb-0 w-full max-w-[1394px] max-md:mb-2.5 max-md:max-w-full">
-              <h2 class="ml-3 text-6xl text-center max-md:text-4xl">Causa Verde</h2>
-              <p class="mt-40 ml-3 text-4xl text-center max-md:mt-10 max-md:max-w-full">
-                Onde a música encontra a sustentabilidade e o respeito pela natureza!
+          </article>
+
+          <article class="artist-card">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/2fd2a92986bb0929d47f4d00b98aa22abff0c4b2aa3e3de51844eee50c3595b3?apiKey=7cf9ab7765004c278c4384db27161637&"
+              alt="The Weeknd"
+              class="artist-image"
+            />
+            <div class="artist-info">
+              <h3 class="artist-name">The Weeknd</h3>
+              <time class="artist-date">18 de Janeiro</time>
+            </div>
+          </article>
+
+          <article class="artist-card">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/6e62ecc3b7ed53f645ff37a19471ce48881c17c6072745bee3b73cdc36c44e8f?apiKey=7cf9ab7765004c278c4384db27161637&"
+              alt="Anselmo Ralph"
+              class="artist-image"
+            />
+            <div class="artist-info">
+              <h3 class="artist-name">Anselmo Ralph</h3>
+              <time class="artist-date">17 de Janeiro</time>
+            </div>
+          </article>
+        </div>
+        <button class="view-more-button">Ver Mais</button>
+      </div>
+    </section>
+
+    <section class="green-cause-section">
+      <div class="green-cause-container">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/77d5fe4b3ac7eccb5b080360ceb2d36e90fdef8d0047a4af8979ad1996638b34?apiKey=7cf9ab7765004c278c4384db27161637&"
+          alt="Sustainability Initiative"
+          class="green-cause-image"
+        />
+        <div class="green-cause-content">
+          <h2 class="section-title">Causa Verde</h2>
+          <p class="green-cause-subtitle">
+            Onde a música encontra a sustentabilidade e o respeito pela natureza!
+          </p>
+          <p class="green-cause-description">
+            O nosso festival vai além da música, celebrando também a harmonia com o meio ambiente, somos comprometidos com a sustentabilidade, adotamos práticas ecológicas para reduzir o impacto ambiental. Desde o uso de materiais biodegradáveis em copos e utensílios até sistemas de reciclagem eficientes, cada detalhe é pensado para proteger o planeta.
+            <br /><br />
+            Este guia nasce do nosso propósito de sensibilizar e incentivar comportamentos mais sustentáveis durante o festival. Queremos que tires o maior proveito desta experiência, mas também envolver-te na construção de um mundo mais ecológico e humano.
+          </p>
+          <button class="learn-more-button">Saber Mais</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-section">
+      <div class="news-container">
+        <h2 class="section-title">Notícias</h2>
+        <div class="news-grid">
+          <article class="news-card">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/30b5da84ef0ff4a39b9f0d7edb769dbc8cecead72333f5ff6d2901f004f71925?apiKey=7cf9ab7765004c278c4384db27161637&"
+              alt="Coldplay announcement"
+              class="news-image"
+            />
+            <div class="news-content">
+              <h3 class="news-title">Coldplay regressam a Portugal em 2025</h3>
+              <time class="news-date">12 Agosto, 2024</time>
+              <p class="news-excerpt">
+                A banda britânica que escusa apresentações está de volta a Portugal desta vez no festival EcoSound. A digressão segue depois por Espanha, Itália, Suíça, Dinamarca, entre outros.
               </p>
-              <div class="self-stretch mt-36 text-3xl leading-8 text-stone-50 max-md:mt-10 max-md:max-w-full">
-                O nosso festival vai além da música, celebrando também a harmonia com o meio ambiente, somos comprometidos com a sustentabilidade, adotamos práticas ecológicas para reduzir o impacto ambiental. Desde o uso de materiais biodegradáveis em copos e utensílios até sistemas de reciclagem eficientes, cada detalhe é pensado para proteger o planeta.
-                <br /><br />
-                Este guia nasce do nosso propósito de sensibilizar e incentivar comportamentos mais sustentáveis durante o festival. Queremos que tires o maior proveito desta experiência, mas também envolver-te na construção de um mundo mais ecológico e humano.
-              </div>
-              <button class="gap-2.5 self-stretch px-20 py-3.5 mt-32 ml-7 max-w-full text-xl text-center bg-green-400 min-h-[50px] w-[262px] max-md:px-5 max-md:mt-10 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-400">
-                Saber Mais
-              </button>
             </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/5a1f33f5d3e2ea28e6fa3d807a0732566601769ed7bb6db75b3c27aec4311c89?apiKey=7cf9ab7765004c278c4384db27161637&"
+              alt="Sustainability Award"
+              class="news-image"
+            />
+            <div class="news-content">
+              <h3 class="news-title">ECOSound recebe prémio de sustentabilidade</h3>
+              <time class="news-date">8 de Maio, 2024</time>
+              <p class="news-excerpt">
+                O festival foi distinguido com o Greener Festival Award, que distingue eventos exemplares para a indústria através das práticas de sustentabilidade.
+              </p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/3a97f32dd124e8d725d95bc7b66facafb65e7d1c0b4fd80c2249b051717b5373?apiKey=7cf9ab7765004c278c4384db27161637&"
+              alt="Ticket Sales"
+              class="news-image"
+            />
+            <div class="news-content">
+              <h3 class="news-title">ECOSound já conta com 22 mil bilhetes vendidos</h3>
+              <time class="news-date">12 Agosto, 2024</time>
+              <p class="news-excerpt">
+                O ECOSound, que se realiza em Idanha-a-Nova, de 18 a 29 de Janeiro, já vendeu 22 mil bilhetes para 38 diferentes nacionalidades. Apenas com mais 3 mil disponíveis para venda.
+              </p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/3b42a4d9c728f912739f2868bfcc64047d29d188813bbc5a7b2807b8b2669d84?apiKey=7cf9ab7765004c278c4384db27161637&"
+              alt="Sustainability Achievement"
+              class="news-image"
+            />
+            <div class="news-content">
+              <h3 class="news-title">Festival mais sustentável de Portugal</h3>
+              <time class="news-date">27 setembro, 2024</time>
+              <p class="news-excerpt">
+                O Festival EcoSound que já vai para a sua 3ª edição, conta com dezenas de medidas inovadoras que o tornam o mais sustentável de Portugal.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <h2 class="newsletter-title">SUBSCREVER A NOSSA NEWSLETTER</h2>
+        <form class="newsletter-form" @submit.prevent="handleSubmit">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input
+            type="email"
+            id="email"
+            class="newsletter-input"
+            placeholder="Email address"
+            required
+          />
+          <button type="submit" class="subscribe-button">Subscrever</button>
+        </form>
+        <p class="privacy-notice">Privacy policy / Terms and conditions</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="contact-section">
+          <div class="social-icons">
+            <img src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/28f1fb91428feb8dce531aeb5d7929351a8e4d9b455c751bcc3999f1cfba9e3d?apiKey=7cf9ab7765004c278c4384db27161637&" alt="" class="social-icon" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/603cabd5fc547c1c721376dcb3d8d2655e6c43d3ff4b235f6f05f4c58b7fbed9?apiKey=7cf9ab7765004c278c4384db27161637&" alt="" class="social-icon" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/30d7a4b90d72e7d0961b782105ca11e84a7371136f1d871713f155167fecf3f8?apiKey=7cf9ab7765004c278c4384db27161637&" alt="" class="social-icon" />
           </div>
-        </section>
-  
-        <section class="flex flex-col items-center px-20 pt-24 pb-44 w-full bg-orange-50 max-md:px-5 max-md:pb-24 max-md:max-w-full" aria-label="News section">
-          <div class="flex flex-col -mb-9 w-full max-w-[1415px] max-md:mb-2.5 max-md:max-w-full">
-            <h2 class="self-center text-6xl font-bold text-center text-black max-md:text-4xl">Notícias</h2>
-            <div class="mt-32 max-md:mt-10 max-md:max-w-full">
-              <div class="flex gap-5 max-md:flex-col">
-                <article class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
-                  <div class="flex flex-col grow text-black max-md:mt-4">
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/30b5da84ef0ff4a39b9f0d7edb769dbc8cecead72333f5ff6d2901f004f71925?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="Coldplay band members" class="object-contain w-full aspect-[0.99]" />
-                    <div class="flex flex-col items-start pr-5 pl-1.5 mt-7">
-                      <h3 class="text-4xl font-bold">Coldplay regressam a Portugal em 2025</h3>
-                      <time datetime="2024-08-12" class="mt-4 text-sm">12 Agosto, 2024</time>
-                      <p class="self-stretch mt-8 text-base">
-                        A banda britânica que escusa apresentações está de volta a Portugal desta vez no festival EcoSound. A digressão segue depois por Espanha, Itália, Suíça, Dinamarca, entre outros.
-                      </p>
-                    </div>
-                  </div>
-                </article>
-  
-                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-                  <div class="flex flex-col text-black max-md:mt-4">
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a1f33f5d3e2ea28e6fa3d807a0732566601769ed7bb6db75b3c27aec4311c89?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="Sustainability award ceremony" class="object-contain w-full aspect-[0.99]" />
-                    <div class="flex flex-col pr-6 pl-1.5 mt-7 max-md:pr-5">
-                      <h3 class="text-4xl font-bold">ECOSound recebe prémio de sustentabilidade</h3>
-                      <time datetime="2024-05-08" class="self-start mt-6 text-sm">8 de Maio, 2024</time>
-                      <p class="mt-8 text-base max-md:mr-1">
-                        O festival foi distinguido com o Greener Festival Award, que distingue eventos exemplares para a indústria através das práticas de sustentabilidade.
-                      </p>
-                    </div>
-                  </div>
-                </article>
-  
-                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-                  <div class="flex flex-col grow text-black max-md:mt-3.5">
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a97f32dd124e8d725d95bc7b66facafb65e7d1c0b4fd80c2249b051717b5373?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="Festival crowd" class="object-contain w-full aspect-[0.99]" />
-                    <div class="flex flex-col pr-3.5 pl-1.5 mt-7">
-                      <h3 class="text-4xl font-bold max-md:mr-2.5">ECOSound já conta com 22 mil bilhetes vendidos</h3>
-                      <time datetime="2024-08-12" class="self-start mt-6 text-sm">12 Agosto, 2024</time>
-                      <p class="mt-8 text-base">
-                        O ECOSound, que se realiza em Idanha-a-Nova, de 18 a 29 de Janeiro, já vendeu 22 mil bilhetes para 38 diferentes nacionalidades. Apenas com mais 3 mil disponíveis para venda.
-                      </p>
-                    </div>
-                  </div>
-                </article>
-  
-                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-                  <div class="flex flex-col text-black max-md:mt-3.5">
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b42a4d9c728f912739f2868bfcc64047d29d188813bbc5a7b2807b8b2669d84?placeholderIfAbsent=true&apiKey=7cf9ab7765004c278c4384db27161637" alt="Eco-friendly festival practices" class="object-contain w-full aspect-[0.99]" />
-                    <div class="flex flex-col pr-5 pl-1.5 mt-7">
-                      <h3 class="text-4xl font-bold">Festival mais sustentável de Portugal</h3>
-                      <time datetime="2024-09-27" class="self-start mt-5 text-sm">27 setembro, 2024</time>
-                      <p class="mt-8 text-base max-md:mr-1.5">
-                        O Festival EcoSound que já vai para a sua 3ª edição, conta com dezenas de medidas inovadoras que o tornam o mais sustentável de Portugal.
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
+          <address class="contact-info">
+            <strong>Contatos</strong><br />
+            ecofestivalsound@gmail.com<br />
+            +351 913 471 533<br />
+            Idanha-a-Nova 39.968830, -7.181986 Alcafozes
+          </address>
+        </div>
+
+        <div class="social-section">
+          <h3 class="social-title">Siga-nos</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <img src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/13a28ff6321176bc84b7b3a091c8f688db5c3c1cdb040ad839369f8c70bc603a?apiKey=7cf9ab7765004c278c4384db27161637&" alt="" class="social-icon" />
+            </a>
+            <a href="#" aria-label="Twitter">
+              <img src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/4b741ab20ed72ce033ecb59baead5f2a0c5b6cd681a98ebecfc70f45dcb3c129?apiKey=7cf9ab7765004c278c4384db27161637&" alt="" class="social-icon" />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/7658bedfc94bba56a59dbd46aff58b96376dffbdfc2b41bff57fcaefe4e0456b?apiKey=7cf9ab7765004c278c4384db27161637&" alt="" class="social-icon" />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <img src="https://cdn.builder.io/api/v1/image/assets/7cf9ab7765004c278c4384db27161637/eb93e4aadc30b6aac01c15aa8f6d4e2c122d84b4e9adb764c1c3580ffeee5de3?apiKey=7cf9ab7765004c278c4384db27161637&" alt="" class="social-icon" />
+            </a>
           </div>
-        </section>
-  
-        <section class="flex flex-col justify-center items-center px-20 py-24 w-full text-white bg-slate-500 max-md:px-5 max-md:max-w-full" aria-label="Newsletter subscription">
-            <div class="flex flex-col w-full max-w-[1415px] max-md:max-w-full">
-                <h2 class="self-center text-6xl font-bold text-center max-md:max-w-full max-md:text-4xl">
-                    SUBSCREVER A NOSSA NEWSLETTER
-                </h2>
-                <form class="mt-20 max-md:mt-10" @submit.prevent="handleSubmit">
-                    <label for="email" class="sr-only">Email address</label>
-                    <input 
-                        type="email" 
-                        id="email"
-                        name="email"
-                        class="w-full text-xl bg-white rounded-md border-2 border-solid border-neutral-400 text-zinc-400 p-4"
-                        placeholder="Email address"
-                        required
-                        aria-required="true"
-                    />
-                    <div class="mt-1 text-xs text-center">
-                        <a href="/privacy" class="hover:underline focus:outline-none focus:ring-2 focus:ring-green-400">Privacy policy</a> / 
-                        <a href="/terms" class="hover:underline focus:outline-none focus:ring-2 focus:ring-green-400">Terms and conditions</a>
-                    </div>
-                    <button 
-                        type="submit"
-                        class="block mx-auto px-16 py-3 mt-14 max-w-full text-2xl text-center whitespace-nowrap bg-green-400 w-[262px] hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-400 max-md:px-5 max-md:mt-10"
-                    >
-                    Subscrever
-                    </button>
-                </form>
-            </div>
-        </section>
-        </main>
-    </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="copyright">© 2024 Festival Eco Sound All Rights Reserved.</p>
+    </footer>
+  </main>
 </template>
-  
-<script lang="ts">
-import { defineComponent } from 'vue'
-  
-export default defineComponent({
-    name: 'FestivalLayout',
-    methods: {
-        handleSubmit(event: Event) {
-        // Handle form submission
-        }
+
+<script>
+export default {
+  name: 'FestivalHome',
+  methods: {
+    handleSubmit() {
+      // Handle newsletter submission
     }
-})
+  }
+}
 </script>
+
+<style scoped>
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.homepage {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.nav-header {
+  background: #4E878C;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 25px 36px;
+}
+
+.logo-image {
+  width: 253px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 49px;
+  color: #fff;
+  font: 700 40px 'Wask New', sans-serif;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.cart-icon,
+.profile-icon {
+  width: 38px;
+  height: 38px;
+}
+
+.hero-section {
+  background: #000;
+  margin-top: -44px;
+  color: #fff;
+  padding: 13px 0 35px;
+}
+
+.hero-content {
+  position: relative;
+  min-height: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta-button {
+  position: relative;
+  background: rgba(74, 211, 115, 0.6);
+  padding: 16px 19px;
+  color: #fff;
+  border: none;
+  width: 283px;
+  font: 400 20px 'Bronova', sans-serif;
+  cursor: pointer;
+}
+
+.countdown {
+  background: #4E878C;
+  color: #fff;
+  text-align: center;
+  padding: 4px 70px 58px;
+  font: 700 160px 'Wask New', sans-serif;
+}
+
+.lineup-section {
+  background: #FFF;
+  padding: 97px 80px 175px;
+}
+
+.section-title {
+  color: #000;
+  text-align: center;
+  font: 700 64px 'Wask New', sans-serif;
+}
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 86px;
+}
+
+.artist-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.artist-image {
+  width: 100%;
+  aspect-ratio: 1.1;
+  object-fit: contain;
+}
+
+.artist-info {
+  margin-top: 35px;
+  padding-left: 15px;
+}
+
+.artist-name {
+  font: 700 40px 'Wask New', sans-serif;
+  color: #000;
+}
+
+.artist-date {
+  display: block;
+  margin-top: 24px;
+  font: 400 20px 'Bronova', sans-serif;
+  color: #000;
+}
+
+.view-more-button {
+  background: #63BE71;
+  color: #fff;
+  border: none;
+  padding: 14px 86px;
+  margin-top: 142px;
+  font: 400 20px 'Bronova', sans-serif;
+  cursor: pointer;
+}
+
+.green-cause-section {
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+
+.green-cause-container {
+  display: flex;
+  min-height: 1080px;
+  align-items: center;
+  justify-content: center;
+  padding: 118px 80px;
+}
+
+.green-cause-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.green-cause-content {
+  position: relative;
+  max-width: 1394px;
+  text-align: center;
+}
+
+.green-cause-subtitle {
+  font: 700 40px 'Wask New', sans-serif;
+  margin-top: 153px;
+}
+
+.green-cause-description {
+  font: 400 28px/33px 'Bronova', sans-serif;
+  margin-top: 147px;
+}
+
+.learn-more-button {
+  background: #63BE71;
+  color: #fff;
+  border: none;
+  padding: 14px 73px;
+  margin-top: 127px;
+  font: 400 20px 'Bronova', sans-serif;
+  cursor: pointer;
+}
+
+.news-section {
+  background: #FFF;
+  padding: 94px 80px 179px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 130px;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-image {
+  width: 100%;
+  aspect-ratio: 0.99;
+  object-fit: contain;
+}
+
+.news-content {
+  margin-top: 26px;
+  padding: 0 18px 0 6px;
+}
+
+.news-title {
+  font: 700 40px 'Wask New', sans-serif;
+  color: #000;
+}
+
+.news-date {
+  display: block;
+  font: 400 13px 'Bronova', sans-serif;
+  color: #000;
+  margin-top: 17px;
+}
+
+.news-excerpt {
+  font: 400 16px 'Bronova', sans-serif;
+  color: #000;
+  margin-top: 32px;
+}
+
+.newsletter-section {
+  background: #4E878C;
+  padding: 94px 80px;
+  color: #fff;
+}
+
+.newsletter-title {
+  text-align: center;
+  font: 700 64px 'Wask New', sans-serif;
+}
+
+.newsletter-form {
+  margin-top: 74px;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #929292;
+  border-radius: 6px;
+  font: 400 20px 'Bronova', sans-serif;
+}
+
+.subscribe-button {
+  background: #63BE71;
+  color: #fff;
+  border: none;
+  padding: 12px 62px;
+  margin-top: 56px;
+  font: 400 24px 'Bronova', sans-serif;
+  cursor: pointer;
+}
+
+.privacy-notice {
+  font: 400 11px 'Bronova', sans-serif;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.site-footer {
+  background: #FFF;
+  padding: 29px 0;
+}
+
+.footer-content {
+  max-width: 1814px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.contact-section {
+  display: flex;
+  gap: 18px;
+}
+
+.contact-info {
+  font: 400 24px/60px 'Bronova', sans-serif;
+  color: #000;
+  font-style: normal;
+}
+
+.social-section {
+  text-align: center;
+}
+
+.social-title {
+  font: 700 32px 'Bronova', sans-serif;
+  color: #000;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-divider {
+  height: 4px;
+  background: #000;
+  margin: 22px 0;
+}
+
+.copyright {
+  text-align: center;
+  font: 400 24px 'Bronova', sans-serif;
+  color: #000;
+  margin-top: 34px;
+}
+
+@media (max-width: 991px) {
+  .nav-header {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .hero-content {
+    padding: 100px 20px;
+  }
+
+  .countdown {
+    font-size: 40px;
+    padding: 0 20px;
+  }
+
+  .lineup-section {
+    padding: 0 20px 100px;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .artist-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .green-cause-container {
+    padding: 100px 20px;
+  }
+
+  .newsletter-section {
+    padding: 0 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+}
+</style>
